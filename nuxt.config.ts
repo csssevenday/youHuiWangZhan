@@ -1,11 +1,24 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+    '@nuxt/image'
   ],
 
+  // Vercel deployment preset
+  nitro: {
+    preset: 'vercel',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+      ignore: ['/api']
+    }
+  },
+
   site: {
-    url: 'https://coupondealsus.com',
+    url: process.env.SITE_URL || 'https://coupondealsus.com',
     name: 'CouponDealsUS'
   },
 
@@ -19,10 +32,11 @@ export default defineNuxtConfig({
     ]
   },
 
-  // @nuxt/image disabled due to Windows Vite compatibility issue
-  // image: {
-  //   provider: 'none'
-  // },
+  image: {
+    domains: ['logo.clearbit.com', 'picsum.photos'],
+    formats: ['webp', 'avif', 'jpg'],
+    quality: 80
+  },
 
   devtools: { enabled: true },
 
@@ -45,7 +59,7 @@ export default defineNuxtConfig({
     // Public (exposed to client)
     public: {
       cjTrackingDomain: process.env.CJ_TRACKING_DOMAIN || 'www.anrdoezrs.net',
-      siteUrl: process.env.SITE_URL || 'http://localhost:3000'
+      siteUrl: process.env.SITE_URL || 'https://coupondealsus.com'
     }
   },
 

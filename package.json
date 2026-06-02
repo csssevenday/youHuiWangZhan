@@ -1,0 +1,31 @@
+{
+  "name": "coupon-deals-us",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/robots": "^5.2.1",
+    "@nuxtjs/seo": "^2.0.0-rc.21",
+    "@nuxtjs/sitemap": "^7.2.1",
+    "@pinia/nuxt": "^0.5.1",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
+    "nuxt": "^3.12.4",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@nuxtjs/robots": "^5.2.1",
+    "@nuxtjs/sitemap": "^7.2.1",
+    "@nuxtjs/tailwindcss": "^6.11.0",
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
+  }
+}

@@ -55,6 +55,7 @@ export default defineNuxtConfig({
     // Server-only
     cjPublisherId: process.env.CJ_PUBLISHER_ID || '',
     cjWebsiteId: process.env.CJ_WEBSITE_ID || '',
+    cjApiToken: process.env.CJ_API_TOKEN || '',
 
     // Public (exposed to client)
     public: {

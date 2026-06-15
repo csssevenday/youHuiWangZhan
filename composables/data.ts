@@ -289,15 +289,33 @@ function generateCJLinksForItems(items: (Deal | Coupon)[], stores: Store[]) {
 }
 
 export async function useStores(): Promise<Store[]> {
+  try {
+    const stores = await $fetch<Store[]>('/api/stores')
+    if (stores.length > 0) return stores
+  } catch {
+    // fall through to mock
+  }
   return mockStores
 }
 
 export async function useDeals(): Promise<Deal[]> {
+  try {
+    const deals = await $fetch<Deal[]>('/api/deals')
+    if (deals.length > 0) return deals
+  } catch {
+    // fall through to mock
+  }
   generateCJLinksForItems(mockDeals, mockStores)
   return mockDeals
 }
 
 export async function useCoupons(): Promise<Coupon[]> {
+  try {
+    const coupons = await $fetch<Coupon[]>('/api/coupons')
+    if (coupons.length > 0) return coupons
+  } catch {
+    // fall through to mock
+  }
   generateCJLinksForItems(mockCoupons, mockStores)
   return mockCoupons
 }

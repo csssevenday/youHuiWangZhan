@@ -47,7 +47,7 @@
         <NuxtLink to="/deals" class="text-blue-600 hover:text-blue-700 font-medium">View All →</NuxtLink>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <DealCard v-for="deal in featuredDeals.slice(0, 6)" :key="deal.id" :deal="deal" />
+        <DealCard v-for="deal in (featuredDeals || []).slice(0, 6)" :key="deal.id" :deal="deal" />
       </div>
     </section>
 
@@ -59,7 +59,7 @@
           <NuxtLink to="/coupons" class="text-blue-600 hover:text-blue-700 font-medium">View All →</NuxtLink>
         </div>
         <div class="space-y-4">
-          <CouponCard v-for="coupon in latestCoupons.slice(0, 5)" :key="coupon.id" :coupon="coupon" />
+          <CouponCard v-for="coupon in (latestCoupons || []).slice(0, 5)" :key="coupon.id" :coupon="coupon" />
         </div>
       </div>
     </section>
@@ -71,7 +71,7 @@
         <NuxtLink to="/stores" class="text-blue-600 hover:text-blue-700 font-medium">View All →</NuxtLink>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-        <StoreCard v-for="store in topStores.slice(0, 6)" :key="store.id" :store="store" />
+        <StoreCard v-for="store in (topStores || []).slice(0, 6)" :key="store.id" :store="store" />
       </div>
     </section>
   </div>

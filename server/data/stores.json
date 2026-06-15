@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "id": 4839834,
+      "name": "Modlily.com",
+      "slug": "modlily-com",
+      "description": "Modlily.com deals and coupons",
+      "logoUrl": "https://logo.clearbit.com/www.modlily.com/",
+      "websiteUrl": "https://www.modlily.com/",
+      "categories": [
+        "Clothing/Apparel",
+        "Women's"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
+      "id": 6404897,
+      "name": "Aiper",
+      "slug": "aiper",
+      "description": "Aiper deals and coupons",
+      "logoUrl": "https://logo.clearbit.com/aiper.com",
+      "websiteUrl": "https://aiper.com",
+      "categories": [
+        "Home & Garden",
+        "Garden"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
+      "id": 7686542,
+      "name": "KSP Performance",
+      "slug": "ksp-performance",
+      "description": "KSP Performance deals and coupons",
+      "logoUrl": "https://logo.clearbit.com/www.kspmotor.com",
+      "websiteUrl": "https://www.kspmotor.com",
+      "categories": [
+        "Automotive",
+        "Parts & Accessories"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
+      "id": 6536042,
+      "name": "Chow Sang Sang",
+      "slug": "chow-sang-sang",
+      "description": "Chow Sang Sang deals and coupons",
+      "logoUrl": "https://logo.clearbit.com/www.chowsangsang.com/en/home",
+      "websiteUrl": "https://www.chowsangsang.com/en/home",
+      "categories": [
+        "Accessories",
+        "Jewelry"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
+      "id": 7582444,
+      "name": "Bc Babycare",
+      "slug": "bc-babycare",
+      "description": "Bc Babycare deals and coupons",
+      "logoUrl": "https://logo.clearbit.com/www.bcbabycare.com/",
+      "websiteUrl": "https://www.bcbabycare.com/",
+      "categories": [
+        "Family",
+        "Children"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
+      "id": 7636568,
+      "name": "Coofandy",
+      "slug": "coofandy",
+      "description": "Coofandy deals and coupons",
+      "logoUrl": "https://logo.clearbit.com/coofandy.com/",
+      "websiteUrl": "https://coofandy.com/",
+      "categories": [
+        "Clothing/Apparel",
+        "Men's"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    }
+  ],
+  "timestamp": 1781515753020
+}

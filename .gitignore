@@ -5,6 +5,9 @@ node_modules
 # Nuxt
 .nuxt
 .output
+
+# Vercel
+.vercel
 .env
 .env.*
 !.env.example

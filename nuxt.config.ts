@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: ['/'],
-      ignore: ['/api']
+      ignore: ['/api', '/sitemap.xml', '/sitemap_index.xml']
     }
   },
 
@@ -26,11 +26,7 @@ export default defineNuxtConfig({
     allow: '/'
   },
 
-  sitemap: {
-    sources: [
-      '/api/__sitemap__/urls'
-    ]
-  },
+  sitemap: {},
 
   image: {
     domains: ['logo.clearbit.com', 'picsum.photos'],

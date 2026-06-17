@@ -25,21 +25,6 @@
       </div>
     </section>
 
-    <!-- Categories -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Browse by Category</h2>
-      <div class="flex flex-wrap gap-2">
-        <NuxtLink
-          v-for="cat in categories"
-          :key="cat"
-          :to="`/category/${cat.toLowerCase().replace(/ /g, '-')}`"
-          class="bg-gray-100 hover:bg-blue-100 text-gray-700 hover:text-blue-700 px-4 py-2 rounded-full text-sm font-medium transition-colors"
-        >
-          {{ cat }}
-        </NuxtLink>
-      </div>
-    </section>
-
     <!-- Featured Deals -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div class="flex items-center justify-between mb-4">
@@ -78,8 +63,6 @@
 </template>
 
 <script setup lang="ts">
-import { CATEGORIES } from '~/utils/config'
-
 definePageMeta({ layout: 'default' })
 
 useHead({
@@ -90,8 +73,6 @@ useHead({
 })
 
 const heroSearch = ref('')
-
-const categories = CATEGORIES
 
 const handleSearch = () => {
   if (heroSearch.value) {

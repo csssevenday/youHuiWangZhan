@@ -5,7 +5,7 @@
       "name": "Modlily.com",
       "slug": "modlily-com",
       "description": "Modlily.com deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/www.modlily.com/",
+      "logoUrl": "https://logo.clearbit.com/www.modlily.com",
       "websiteUrl": "https://www.modlily.com/",
       "categories": [
         "Clothing/Apparel",
@@ -29,20 +29,6 @@
       "dealCount": 0
     },
     {
-      "id": 7686542,
-      "name": "KSP Performance",
-      "slug": "ksp-performance",
-      "description": "KSP Performance deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/www.kspmotor.com",
-      "websiteUrl": "https://www.kspmotor.com",
-      "categories": [
-        "Automotive",
-        "Parts & Accessories"
-      ],
-      "rating": 4,
-      "dealCount": 0
-    },
-    {
       "id": 6536042,
       "name": "Chow Sang Sang",
       "slug": "chow-sang-sang",
@@ -57,11 +43,25 @@
       "dealCount": 0
     },
     {
+      "id": 7804601,
+      "name": "GearUP",
+      "slug": "gearup",
+      "description": "GearUP deals and coupons",
+      "logoUrl": "https://logo.clearbit.com/www.gearupbooster.com",
+      "websiteUrl": "https://www.gearupbooster.com/",
+      "categories": [
+        "Games & Toys",
+        "Electronic Games"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
       "id": 7582444,
       "name": "Bc Babycare",
       "slug": "bc-babycare",
       "description": "Bc Babycare deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/www.bcbabycare.com/",
+      "logoUrl": "https://logo.clearbit.com/www.bcbabycare.com",
       "websiteUrl": "https://www.bcbabycare.com/",
       "categories": [
         "Family",
@@ -75,7 +75,7 @@
       "name": "Coofandy",
       "slug": "coofandy",
       "description": "Coofandy deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/coofandy.com/",
+      "logoUrl": "https://logo.clearbit.com/coofandy.com",
       "websiteUrl": "https://coofandy.com/",
       "categories": [
         "Clothing/Apparel",
@@ -83,7 +83,35 @@
       ],
       "rating": 4,
       "dealCount": 0
+    },
+    {
+      "id": 7686542,
+      "name": "KSP Performance",
+      "slug": "ksp-performance",
+      "description": "KSP Performance deals and coupons",
+      "logoUrl": "https://logo.clearbit.com/www.kspmotor.com",
+      "websiteUrl": "https://www.kspmotor.com",
+      "categories": [
+        "Automotive",
+        "Parts & Accessories"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
+      "id": 7711902,
+      "name": "AliExpress - Global",
+      "slug": "aliexpress-global",
+      "description": "AliExpress - Global deals and coupons",
+      "logoUrl": "https://logo.clearbit.com/www.aliexpress.com",
+      "websiteUrl": "http://www.aliexpress.com",
+      "categories": [
+        "Buying and Selling",
+        "E-commerce Solutions/Providers"
+      ],
+      "rating": 4,
+      "dealCount": 0
     }
   ],
-  "timestamp": 1781515753020
+  "timestamp": 1781707523571
 }

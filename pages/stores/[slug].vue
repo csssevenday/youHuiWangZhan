@@ -17,8 +17,8 @@
     <!-- Store Deals -->
     <section class="mb-8">
       <h2 class="text-2xl font-bold text-gray-900 mb-4">Active Deals</h2>
-      <div v-if="storeDeals.length" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <DealCard v-for="deal in storeDeals" :key="deal.id" :deal="deal" :store="store" />
+      <div v-if="storeDeals.length" class="space-y-4">
+        <DealCard v-for="deal in storeDeals" :key="deal.id" :deal="deal" />
       </div>
       <p v-else class="text-gray-500">No active deals for this store.</p>
     </section>

@@ -1,5 +1,6 @@
-import type { Coupon, Deal, Store } from '~/types'
-import { generateCJLink, generateSID } from '~/utils/cj-tracking'
+import type { Coupon, Deal, Store } from '../../types'
+import { generateSID } from '../../utils/cj-tracking'
+import { getStoreLogo } from './logos'
 
 function slugify(str: string): string {
   return str
@@ -29,26 +30,26 @@ export function mapCJLinksToCoupons(data: any): Coupon[] {
   const linkArray = Array.isArray(links) ? links : [links]
   return linkArray
     .filter((link: any) => link['coupon-code'])
-    .map((link: any) => ({
-      id: `cj-${link['link-id'] || link['link-code']}`,
-      storeId: Number(link['advertiser-id']) || 0,
-      storeName: link['advertiser-name'] || '',
-      storeSlug: slugify(link['advertiser-name'] || ''),
-      title: link['link-name'] || link['promotion-type'] || 'Coupon',
-      description: link.description || '',
-      code: link['coupon-code'] || '',
-      discount: extractDiscount(link),
-      type: mapCJDiscountType(link['link-promotion-type'] || link['promotion-type'] || ''),
-      categories: [link.category].filter(Boolean),
-      expiryDate: link['promotion-end-date'] || '',
-      verified: true,
-      successRate: 0,
-      cjLink: generateCJLink({
-        destinationUrl: link.destination || link.clickUrl || '',
-        sid: generateSID({ storeId: Number(link['advertiser-id']) || 0, dealId: String(link['link-id'] || '') }),
-        advertiserId: link['advertiser-id'],
-      }),
-    }))
+    .map((link: any) => {
+      const clickUrl = link['clickUrl'] || ''
+      const separator = clickUrl.includes('?') ? '&' : '?'
+      return {
+        id: `cj-${link['link-id'] || link['link-code']}`,
+        storeId: Number(link['advertiser-id']) || 0,
+        storeName: link['advertiser-name'] || '',
+        storeSlug: slugify(link['advertiser-name'] || ''),
+        title: link['link-name'] || link['promotion-type'] || 'Coupon',
+        description: link.description || '',
+        code: link['coupon-code'] || '',
+        discount: extractDiscount(link),
+        type: mapCJDiscountType(link['link-promotion-type'] || link['promotion-type'] || ''),
+        categories: [link.category].filter(Boolean),
+        expiryDate: link['promotion-end-date'] || '',
+        verified: true,
+        successRate: 0,
+        cjLink: `${clickUrl}${separator}sid=${encodeURIComponent(generateSID({ storeId: Number(link['advertiser-id']) || 0, dealId: String(link['link-id'] || '') }))}`,
+      }
+    })
 }
 
 export function mapCJLinksToDeals(data: any): Deal[] {
@@ -56,28 +57,28 @@ export function mapCJLinksToDeals(data: any): Deal[] {
   const linkArray = Array.isArray(links) ? links : [links]
   return linkArray
     .filter((link: any) => !link['coupon-code'])
-    .map((link: any) => ({
-      id: `cj-${link['link-id'] || link['link-code']}`,
-      storeId: Number(link['advertiser-id']) || 0,
-      storeName: link['advertiser-name'] || '',
-      storeSlug: slugify(link['advertiser-name'] || ''),
-      title: link['link-name'] || link['promotion-type'] || 'Deal',
-      description: link.description || '',
-      originalPrice: link['original-price'] || undefined,
-      salePrice: link['sale-price'] || undefined,
-      discount: extractDiscount(link),
-      discountType: 'percentage',
-      categories: [link.category].filter(Boolean),
-      image: link['banner-url'] || link['image-url'] || undefined,
-      cjLink: generateCJLink({
-        destinationUrl: link.destination || link.clickUrl || '',
-        sid: generateSID({ storeId: Number(link['advertiser-id']) || 0, dealId: String(link['link-id'] || '') }),
-        advertiserId: link['advertiser-id'],
-      }),
-      startDate: link['promotion-start-date'] || '',
-      endDate: link['promotion-end-date'] || '',
-      featured: link.featured === 'yes' || link.featured === true,
-    }))
+    .map((link: any) => {
+      const clickUrl = link['clickUrl'] || ''
+      const separator = clickUrl.includes('?') ? '&' : '?'
+      return {
+        id: `cj-${link['link-id'] || link['link-code']}`,
+        storeId: Number(link['advertiser-id']) || 0,
+        storeName: link['advertiser-name'] || '',
+        storeSlug: slugify(link['advertiser-name'] || ''),
+        title: link['link-name'] || link['promotion-type'] || 'Deal',
+        description: link.description || '',
+        originalPrice: link['original-price'] || undefined,
+        salePrice: link['sale-price'] || undefined,
+        discount: extractDiscount(link),
+        discountType: 'percentage',
+        categories: [link.category].filter(Boolean),
+        image: link['banner-url'] || link['image-url'] || undefined,
+        cjLink: `${clickUrl}${separator}sid=${encodeURIComponent(generateSID({ storeId: Number(link['advertiser-id']) || 0, dealId: String(link['link-id'] || '') }))}`,
+        startDate: link['promotion-start-date'] || '',
+        endDate: link['promotion-end-date'] || '',
+        featured: link.featured === 'yes' || link.featured === true,
+      }
+    })
 }
 
 export function mapCJAdvertisersToStores(data: any, existingCoupons: Coupon[], existingDeals: Deal[]): Store[] {
@@ -102,7 +103,7 @@ export function mapCJAdvertisersToStores(data: any, existingCoupons: Coupon[], e
       name: adv['advertiser-name'] || '',
       slug: slugify(adv['advertiser-name'] || ''),
       description: adv['advertiser-description'] || `${adv['advertiser-name']} deals and coupons`,
-      logoUrl: `https://logo.clearbit.com/${(adv['program-url'] || '').replace(/^https?:\/\//, '')}`,
+      logoUrl: getStoreLogo(adv['advertiser-id'], adv['program-url'] || ''),
       websiteUrl: adv['program-url'] || '',
       categories,
       rating: 4.0,

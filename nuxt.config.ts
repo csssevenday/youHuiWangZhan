@@ -26,7 +26,9 @@ export default defineNuxtConfig({
     allow: '/'
   },
 
-  sitemap: {},
+  sitemap: {
+    prerender: false
+  },
 
   image: {
     domains: ['logo.clearbit.com', 'picsum.photos'],

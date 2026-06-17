@@ -16,7 +16,6 @@ export default defineEventHandler(async () => {
     }),
     fetchCJLinks({
       websiteId: config.cjWebsiteId,
-      promotionType: 'deal',
       advertiserIds: 'joined',
       recordsPerPage: 100,
     }),
@@ -32,7 +31,6 @@ export default defineEventHandler(async () => {
 
   const advertiserData = await fetchCJAdvertisers({
     advertiserIds: 'joined',
-    relationshipStatus: 'joined',
   })
 
   if (advertiserData) {

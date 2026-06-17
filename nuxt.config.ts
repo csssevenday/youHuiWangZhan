@@ -62,5 +62,14 @@ export default defineNuxtConfig({
     }
   },
 
+  // Fix Windows path issue with component imports
+  vite: {
+    resolve: {
+      alias: {
+        'vite/modulepreload-polyfill': 'vite/modulepreload-polyfill'
+      }
+    }
+  },
+
   compatibilityDate: '2024-06-02'
 })

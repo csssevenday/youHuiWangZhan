@@ -2,7 +2,7 @@
   <div v-if="store" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Store Header -->
     <div class="bg-white rounded-xl shadow-md p-6 mb-8 flex flex-col sm:flex-row items-center gap-6">
-      <img :src="store.logoUrl" :alt="store.name" class="w-24 h-24 rounded-full" />
+      <img :src="store.logoUrl" :alt="store.name" class="w-[115px] h-10 object-contain" @error="$el.style.display = 'none'" />
       <div class="text-center sm:text-left">
         <h1 class="text-3xl font-bold text-gray-900">{{ store.name }}</h1>
         <p class="text-gray-600 mt-2">{{ store.description }}</p>

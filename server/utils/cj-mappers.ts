@@ -84,22 +84,23 @@ export function mapCJLinksToDeals(data: any): Deal[] {
 export function mapCJAdvertisersToStores(data: any, existingCoupons: Coupon[], existingDeals: Deal[]): Store[] {
   const advertisers = data?.['cj-api']?.advertisers?.advertiser || []
   const advArray = Array.isArray(advertisers) ? advertisers : [advertisers]
-  const couponMap = new Map<string, number>()
-  const dealMap = new Map<string, number>()
+  const couponMap = new Map<number, number>()
+  const dealMap = new Map<number, number>()
 
   for (const c of existingCoupons) {
-    couponMap.set(c.storeName, (couponMap.get(c.storeName) || 0) + 1)
+    couponMap.set(c.storeId, (couponMap.get(c.storeId) || 0) + 1)
   }
   for (const d of existingDeals) {
-    dealMap.set(d.storeName, (dealMap.get(d.storeName) || 0) + 1)
+    dealMap.set(d.storeId, (dealMap.get(d.storeId) || 0) + 1)
   }
 
   return advArray.map((adv: any) => {
     const categories = adv['primary-category']
       ? [adv['primary-category'].parent, adv['primary-category'].child].filter(Boolean)
       : (adv.category || '').split(',').map((c: string) => c.trim()).filter(Boolean)
+    const advId = Number(adv['advertiser-id']) || 0
     return {
-      id: Number(adv['advertiser-id']) || 0,
+      id: advId,
       name: adv['advertiser-name'] || '',
       slug: slugify(adv['advertiser-name'] || ''),
       description: adv['advertiser-description'] || `${adv['advertiser-name']} deals and coupons`,
@@ -107,7 +108,7 @@ export function mapCJAdvertisersToStores(data: any, existingCoupons: Coupon[], e
       websiteUrl: adv['program-url'] || '',
       categories,
       rating: 4.0,
-      dealCount: (couponMap.get(adv['advertiser-name']) || 0) + (dealMap.get(adv['advertiser-name']) || 0),
+      dealCount: (couponMap.get(advId) || 0) + (dealMap.get(advId) || 0),
     }
   })
 }

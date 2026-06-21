@@ -1,53 +1,11 @@
 {
   "data": [
     {
-      "id": 4839834,
-      "name": "Modlily.com",
-      "slug": "modlily-com",
-      "description": "Modlily.com deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/www.modlily.com",
-      "websiteUrl": "https://www.modlily.com/",
-      "categories": [
-        "Clothing/Apparel",
-        "Women's"
-      ],
-      "rating": 4,
-      "dealCount": 0
-    },
-    {
-      "id": 6404897,
-      "name": "Aiper",
-      "slug": "aiper",
-      "description": "Aiper deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/aiper.com",
-      "websiteUrl": "https://aiper.com",
-      "categories": [
-        "Home & Garden",
-        "Garden"
-      ],
-      "rating": 4,
-      "dealCount": 0
-    },
-    {
-      "id": 6536042,
-      "name": "Chow Sang Sang",
-      "slug": "chow-sang-sang",
-      "description": "Chow Sang Sang deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/www.chowsangsang.com/en/home",
-      "websiteUrl": "https://www.chowsangsang.com/en/home",
-      "categories": [
-        "Accessories",
-        "Jewelry"
-      ],
-      "rating": 4,
-      "dealCount": 0
-    },
-    {
       "id": 7804601,
       "name": "GearUP",
       "slug": "gearup",
       "description": "GearUP deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/www.gearupbooster.com",
+      "logoUrl": "/logos/GearUP.png",
       "websiteUrl": "https://www.gearupbooster.com/",
       "categories": [
         "Games & Toys",
@@ -57,11 +15,67 @@
       "dealCount": 0
     },
     {
+      "id": 6536042,
+      "name": "Chow Sang Sang",
+      "slug": "chow-sang-sang",
+      "description": "Chow Sang Sang deals and coupons",
+      "logoUrl": "https://logo.clearbit.com/chowsangsang.com/en/home",
+      "websiteUrl": "https://www.chowsangsang.com/en/home",
+      "categories": [
+        "Accessories",
+        "Jewelry"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
+      "id": 6404897,
+      "name": "Aiper",
+      "slug": "aiper",
+      "description": "Aiper deals and coupons",
+      "logoUrl": "/logos/aiper.png",
+      "websiteUrl": "https://aiper.com",
+      "categories": [
+        "Home & Garden",
+        "Garden"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
+      "id": 7711902,
+      "name": "AliExpress - Global",
+      "slug": "aliexpress-global",
+      "description": "AliExpress - Global deals and coupons",
+      "logoUrl": "/logos/AliExpress.png",
+      "websiteUrl": "http://www.aliexpress.com",
+      "categories": [
+        "Buying and Selling",
+        "E-commerce Solutions/Providers"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
+      "id": 4839834,
+      "name": "Modlily.com",
+      "slug": "modlily-com",
+      "description": "Modlily.com deals and coupons",
+      "logoUrl": "/logos/Modlily.png",
+      "websiteUrl": "https://www.modlily.com/",
+      "categories": [
+        "Clothing/Apparel",
+        "Women's"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
       "id": 7582444,
       "name": "Bc Babycare",
       "slug": "bc-babycare",
       "description": "Bc Babycare deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/www.bcbabycare.com",
+      "logoUrl": "/logos/Bc Babycare.png",
       "websiteUrl": "https://www.bcbabycare.com/",
       "categories": [
         "Family",
@@ -75,7 +89,7 @@
       "name": "Coofandy",
       "slug": "coofandy",
       "description": "Coofandy deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/coofandy.com",
+      "logoUrl": "/logos/Coofandy.png",
       "websiteUrl": "https://coofandy.com/",
       "categories": [
         "Clothing/Apparel",
@@ -89,7 +103,7 @@
       "name": "KSP Performance",
       "slug": "ksp-performance",
       "description": "KSP Performance deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/www.kspmotor.com",
+      "logoUrl": "/logos/KSP Performance.png",
       "websiteUrl": "https://www.kspmotor.com",
       "categories": [
         "Automotive",
@@ -97,21 +111,7 @@
       ],
       "rating": 4,
       "dealCount": 0
-    },
-    {
-      "id": 7711902,
-      "name": "AliExpress - Global",
-      "slug": "aliexpress-global",
-      "description": "AliExpress - Global deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/www.aliexpress.com",
-      "websiteUrl": "http://www.aliexpress.com",
-      "categories": [
-        "Buying and Selling",
-        "E-commerce Solutions/Providers"
-      ],
-      "rating": 4,
-      "dealCount": 0
     }
   ],
-  "timestamp": 1781707523571
+  "timestamp": 1782028676321
 }

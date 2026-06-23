@@ -58,7 +58,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Save money with verified coupon codes and exclusive deals from top US brands. Find discounts on electronics, fashion, home goods and more.' }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     }
   },

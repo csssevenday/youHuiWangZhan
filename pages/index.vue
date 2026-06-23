@@ -109,7 +109,7 @@ useHead({
         '@type': 'Organization',
         name: 'HotCouponGain',
         url: siteUrl,
-        logo: `${siteUrl}/favicon.svg`
+        logo: `${siteUrl}/favicon.ico`
       }
     ])
   }]

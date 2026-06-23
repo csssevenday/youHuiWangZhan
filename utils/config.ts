@@ -7,7 +7,7 @@ export function getCJConfig() {
   }
 }
 
-export const SITE_NAME = 'CouponDealsUS'
+export const SITE_NAME = 'HotCouponGain'
 export const SITE_DESCRIPTION = 'Find the best deals, coupons, and discounts from top brands in the US'
 
 export const CATEGORIES = [

@@ -8,11 +8,15 @@
 
     <div class="flex-1 min-w-0">
       <div class="flex items-center gap-2 mb-1">
-        <span class="text-sm text-gray-500">{{ deal.storeName }}</span>
+        <NuxtLink :to="`/stores/${deal.storeSlug}`" class="text-sm text-blue-600 hover:text-blue-700 font-medium">
+          {{ deal.storeName }}
+        </NuxtLink>
       </div>
 
-      <h3 class="text-lg font-semibold text-gray-900">{{ deal.title }}</h3>
-      <p class="text-sm text-gray-600 mt-1 line-clamp-2">{{ deal.description }}</p>
+      <NuxtLink :to="`/deals/${deal.slug || deal.id}`">
+        <h3 class="text-lg font-semibold text-gray-900 hover:text-blue-700 transition-colors">{{ deal.title }}</h3>
+      </NuxtLink>
+      <p v-if="deal.description" class="text-sm text-gray-600 mt-1 line-clamp-2">{{ deal.description }}</p>
 
       <div v-if="deal.originalPrice && deal.salePrice" class="flex items-center gap-2 mt-3">
         <span class="text-gray-400 line-through">{{ deal.originalPrice }}</span>
@@ -20,7 +24,7 @@
       </div>
 
       <div class="flex items-center gap-3 mt-3">
-        <span class="text-xs text-gray-400">
+        <span v-if="deal.endDate" class="text-xs text-gray-400">
           Expires {{ formatDate(deal.endDate) }}
         </span>
         <button

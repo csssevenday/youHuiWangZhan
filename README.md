@@ -1,4 +1,4 @@
-# CouponDealsUS
+# HotCouponGain
 
 A coupon and deal discovery website built with Nuxt 3, integrated with CJ Affiliate (Commission Junction) on-click tracking.
 

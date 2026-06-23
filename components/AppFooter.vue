@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <h3 class="text-xl font-bold text-white mb-4">CouponDealsUS</h3>
+          <h3 class="text-xl font-bold text-white mb-4">HotCouponGain</h3>
           <p class="text-sm text-gray-400">Find the best deals, coupons, and discounts from top brands in the US.</p>
         </div>
         <div>
@@ -18,7 +18,7 @@
           <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Top Categories</h4>
           <ul class="space-y-2">
             <li v-for="cat in topCategories" :key="cat">
-              <NuxtLink :to="`/category/${cat.toLowerCase().replace(/ /g, '-')}`" class="text-gray-400 hover:text-white">
+              <NuxtLink :to="`/category/${cat.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`" class="text-gray-400 hover:text-white">
                 {{ cat }}
               </NuxtLink>
             </li>
@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
-        <p>&copy; {{ new Date().getFullYear() }} CouponDealsUS. All rights reserved.</p>
+        <p>&copy; {{ new Date().getFullYear() }} HotCouponGain. All rights reserved.</p>
         <p class="mt-2 text-xs">Disclosure: We may earn commissions when you shop through our links.</p>
       </div>
     </div>

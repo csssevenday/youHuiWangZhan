@@ -65,11 +65,54 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'default' })
 
+const siteUrl = useRuntimeConfig().public.siteUrl
+
 useHead({
-  title: 'Best Coupons & Deals Online | CouponDealsUS',
+  title: 'Best Coupons & Deals Online | HotCouponGain',
   meta: [
     { name: 'description', content: 'Save money with verified coupon codes and exclusive deals from top US brands.' }
+  ],
+  link: [
+    { rel: 'canonical', href: siteUrl }
   ]
+})
+
+useSeoMeta({
+  ogTitle: 'HotCouponGain - Best Coupons & Deals Online',
+  ogDescription: 'Save money with verified coupon codes and exclusive deals from top US brands.',
+  ogUrl: siteUrl,
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'HotCouponGain - Best Coupons & Deals Online',
+  twitterDescription: 'Save money with verified coupon codes and exclusive deals from top US brands.',
+})
+
+// JSON-LD: WebSite + Organization
+useHead({
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'HotCouponGain',
+        url: siteUrl,
+        description: 'Save money with verified coupon codes and exclusive deals from top US brands.',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: `${siteUrl}/search?q={search_term_string}`,
+          'query-input': 'required name=search_term_string'
+        }
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'HotCouponGain',
+        url: siteUrl,
+        logo: `${siteUrl}/favicon.svg`
+      }
+    ])
+  }]
 })
 
 const heroSearch = ref('')

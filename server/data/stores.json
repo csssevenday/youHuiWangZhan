@@ -1,66 +1,10 @@
 {
   "data": [
     {
-      "id": 7804601,
-      "name": "GearUP",
-      "slug": "gearup",
-      "description": "GearUP deals and coupons",
-      "logoUrl": "/logos/GearUP.png",
-      "websiteUrl": "https://www.gearupbooster.com/",
-      "categories": [
-        "Games & Toys",
-        "Electronic Games"
-      ],
-      "rating": 4,
-      "dealCount": 0
-    },
-    {
-      "id": 6536042,
-      "name": "Chow Sang Sang",
-      "slug": "chow-sang-sang",
-      "description": "Chow Sang Sang deals and coupons",
-      "logoUrl": "https://logo.clearbit.com/chowsangsang.com/en/home",
-      "websiteUrl": "https://www.chowsangsang.com/en/home",
-      "categories": [
-        "Accessories",
-        "Jewelry"
-      ],
-      "rating": 4,
-      "dealCount": 0
-    },
-    {
-      "id": 6404897,
-      "name": "Aiper",
-      "slug": "aiper",
-      "description": "Aiper deals and coupons",
-      "logoUrl": "/logos/aiper.png",
-      "websiteUrl": "https://aiper.com",
-      "categories": [
-        "Home & Garden",
-        "Garden"
-      ],
-      "rating": 4,
-      "dealCount": 0
-    },
-    {
-      "id": 7711902,
-      "name": "AliExpress - Global",
-      "slug": "aliexpress-global",
-      "description": "AliExpress - Global deals and coupons",
-      "logoUrl": "/logos/AliExpress.png",
-      "websiteUrl": "http://www.aliexpress.com",
-      "categories": [
-        "Buying and Selling",
-        "E-commerce Solutions/Providers"
-      ],
-      "rating": 4,
-      "dealCount": 0
-    },
-    {
       "id": 4839834,
       "name": "Modlily.com",
       "slug": "modlily-com",
-      "description": "Modlily.com deals and coupons",
+      "description": "Modlily.com deals and coupons - Save money with verified discounts and promo codes.",
       "logoUrl": "/logos/Modlily.png",
       "websiteUrl": "https://www.modlily.com/",
       "categories": [
@@ -71,24 +15,38 @@
       "dealCount": 0
     },
     {
-      "id": 7582444,
-      "name": "Bc Babycare",
-      "slug": "bc-babycare",
-      "description": "Bc Babycare deals and coupons",
-      "logoUrl": "/logos/Bc Babycare.png",
-      "websiteUrl": "https://www.bcbabycare.com/",
+      "id": 7711902,
+      "name": "AliExpress - Global",
+      "slug": "aliexpress-global",
+      "description": "AliExpress - Global deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "/logos/AliExpress.png",
+      "websiteUrl": "http://www.aliexpress.com",
       "categories": [
-        "Family",
-        "Children"
+        "Buying and Selling",
+        "E-commerce Solutions/Providers"
       ],
       "rating": 4,
-      "dealCount": 0
+      "dealCount": 26
+    },
+    {
+      "id": 6536042,
+      "name": "Chow Sang Sang",
+      "slug": "chow-sang-sang",
+      "description": "Chow Sang Sang deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "/logos/chow-sang-sang.png",
+      "websiteUrl": "https://www.chowsangsang.com/en/home",
+      "categories": [
+        "Accessories",
+        "Jewelry"
+      ],
+      "rating": 4,
+      "dealCount": 49
     },
     {
       "id": 7636568,
       "name": "Coofandy",
       "slug": "coofandy",
-      "description": "Coofandy deals and coupons",
+      "description": "Coofandy deals and coupons - Save money with verified discounts and promo codes.",
       "logoUrl": "/logos/Coofandy.png",
       "websiteUrl": "https://coofandy.com/",
       "categories": [
@@ -96,22 +54,64 @@
         "Men's"
       ],
       "rating": 4,
+      "dealCount": 1
+    },
+    {
+      "id": 7804601,
+      "name": "GearUP",
+      "slug": "gearup",
+      "description": "GearUP deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "/logos/GearUP.png",
+      "websiteUrl": "https://www.gearupbooster.com/",
+      "categories": [
+        "Games & Toys",
+        "Electronic Games"
+      ],
+      "rating": 4,
       "dealCount": 0
+    },
+    {
+      "id": 6404897,
+      "name": "Aiper",
+      "slug": "aiper",
+      "description": "Aiper deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "/logos/aiper.png",
+      "websiteUrl": "https://aiper.com",
+      "categories": [
+        "Home & Garden",
+        "Garden"
+      ],
+      "rating": 4,
+      "dealCount": 12
+    },
+    {
+      "id": 7582444,
+      "name": "Bc Babycare",
+      "slug": "bc-babycare",
+      "description": "Bc Babycare deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "/logos/bc-babycare.png",
+      "websiteUrl": "https://www.bcbabycare.com/",
+      "categories": [
+        "Family",
+        "Children"
+      ],
+      "rating": 4,
+      "dealCount": 13
     },
     {
       "id": 7686542,
       "name": "KSP Performance",
       "slug": "ksp-performance",
-      "description": "KSP Performance deals and coupons",
-      "logoUrl": "/logos/KSP Performance.png",
+      "description": "KSP Performance deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "/logos/ksp-performance.png",
       "websiteUrl": "https://www.kspmotor.com",
       "categories": [
         "Automotive",
         "Parts & Accessories"
       ],
       "rating": 4,
-      "dealCount": 0
+      "dealCount": 1
     }
   ],
-  "timestamp": 1782028676321
+  "timestamp": 1782193078026
 }

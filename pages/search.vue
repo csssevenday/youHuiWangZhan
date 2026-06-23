@@ -1,10 +1,17 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <Breadcrumb :items="[{ label: 'Home', to: '/' }, { label: 'Search Results' }]" />
+
     <h1 class="text-3xl font-bold text-gray-900 mb-6">Search Results for "{{ route.query.q }}"</h1>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <DealCard v-for="deal in searchResults" :key="deal.id" :deal="deal" />
-    </div>
+    <p v-if="searchResults.length > 0" class="text-gray-600 mb-4">{{ searchResults.length }} results found</p>
+
+    <section>
+      <h2 class="sr-only">Search Results</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <DealCard v-for="deal in searchResults" :key="deal.id" :deal="deal" />
+      </div>
+    </section>
 
     <p v-if="searchResults.length === 0" class="text-center text-gray-500 py-12">
       No deals found matching "{{ route.query.q }}".
@@ -17,8 +24,10 @@ definePageMeta({ layout: 'default' })
 
 const route = useRoute()
 
-useHead({
-  title: computed(() => `Search: ${route.query.q || ''} | CouponDealsUS`)
+useSeoMeta({
+  title: () => `Search: ${route.query.q || ''} | HotCouponGain`,
+  description: 'Search results for deals and coupons on HotCouponGain.',
+  robots: 'noindex, follow',
 })
 
 const { data: allDeals } = await useAsyncData('search-deals', () => useDeals())

@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between h-16">
         <NuxtLink to="/" class="flex items-center gap-2">
           <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            CouponDealsUS
+            HotCouponGain
           </span>
         </NuxtLink>
 

@@ -2,9 +2,9 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
+    '@nuxtjs/seo',
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
-    '@nuxt/image'
+    '@nuxtjs/robots'
   ],
 
   // Vercel deployment preset
@@ -18,22 +18,30 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: process.env.SITE_URL || 'https://coupondealsus.com',
-    name: 'CouponDealsUS'
+    url: process.env.SITE_URL || 'https://hotcoupongain.com',
+    name: 'HotCouponGain'
+  },
+
+  ogImage: {
+    enabled: true,
+    defaults: {
+      component: 'NuxtSeo',
+      color: 'rgb(37,99,235)',
+      fontSize: 48
+    }
   },
 
   robots: {
-    allow: '/'
+    disallow: ['/search', '/api'],
+    allow: '/',
+    sitemap: ['/sitemap.xml']
   },
 
   sitemap: {
-    prerender: false
-  },
-
-  image: {
-    domains: ['logo.clearbit.com', 'picsum.photos'],
-    formats: ['webp', 'avif', 'jpg'],
-    quality: 80
+    prerender: false,
+    sources: [
+      '/api/__sitemap__/urls'
+    ]
   },
 
   devtools: { enabled: true },
@@ -42,9 +50,15 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Top Deals & Coupons - Save Money Today',
+      htmlAttrs: {
+        lang: 'en'
+      },
+      title: 'HotCouponGain - Best Coupons & Deals Online',
       meta: [
-        { name: 'description', content: 'Find the best deals, coupons, and discounts from top brands. Save money on your favorite products.' }
+        { name: 'description', content: 'Save money with verified coupon codes and exclusive deals from top US brands. Find discounts on electronics, fashion, home goods and more.' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
       ]
     }
   },
@@ -58,7 +72,7 @@ export default defineNuxtConfig({
     // Public (exposed to client)
     public: {
       cjTrackingDomain: process.env.CJ_TRACKING_DOMAIN || 'www.anrdoezrs.net',
-      siteUrl: process.env.SITE_URL || 'https://coupondealsus.com'
+      siteUrl: process.env.SITE_URL || 'https://hotcoupongain.com'
     }
   },
 

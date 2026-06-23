@@ -30,6 +30,7 @@ export interface Coupon {
 
 export interface Deal {
   id: string
+  slug: string
   storeId: number
   storeName: string
   storeSlug: string

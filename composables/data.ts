@@ -73,6 +73,7 @@ const mockStores: Store[] = [
 const mockDeals: Deal[] = [
   {
     id: 'deal-1',
+    slug: 'up-to-50-off-electronics-amazon',
     storeId: 1,
     storeName: 'Amazon',
     storeSlug: 'amazon',
@@ -91,6 +92,7 @@ const mockDeals: Deal[] = [
   },
   {
     id: 'deal-2',
+    slug: '25-off-running-shoes-nike',
     storeId: 2,
     storeName: 'Nike',
     storeSlug: 'nike',
@@ -109,6 +111,7 @@ const mockDeals: Deal[] = [
   },
   {
     id: 'deal-3',
+    slug: '30-off-orders-over-100-sephora',
     storeId: 3,
     storeName: 'Sephora',
     storeSlug: 'sephora',
@@ -127,6 +130,7 @@ const mockDeals: Deal[] = [
   },
   {
     id: 'deal-4',
+    slug: '40-off-home-decor-target',
     storeId: 4,
     storeName: 'Target',
     storeSlug: 'target',
@@ -143,6 +147,7 @@ const mockDeals: Deal[] = [
   },
   {
     id: 'deal-5',
+    slug: 'up-to-30-off-hotels-booking-com',
     storeId: 5,
     storeName: 'Booking.com',
     storeSlug: 'booking-com',
@@ -159,6 +164,7 @@ const mockDeals: Deal[] = [
   },
   {
     id: 'deal-6',
+    slug: 'extra-20-off-sale-items-macys',
     storeId: 6,
     storeName: 'Macy\'s',
     storeSlug: 'macys',

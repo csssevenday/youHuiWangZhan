@@ -1,9 +1,11 @@
 <template>
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <Breadcrumb :items="[{ label: 'Home', to: '/' }, { label: 'About Us' }]" />
+
     <h1 class="text-3xl font-bold text-gray-900 mb-6">About Us</h1>
     <div class="prose prose-lg">
       <p class="text-gray-600">
-        CouponDealsUS is a free coupon and deal discovery platform helping consumers save money on their favorite brands.
+        HotCouponGain is a free coupon and deal discovery platform helping consumers save money on their favorite brands.
         We partner with thousands of retailers through CJ Affiliate (Commission Junction) to bring you verified coupon codes
         and exclusive deals.
       </p>
@@ -23,5 +25,35 @@
 
 <script setup lang="ts">
 definePageMeta({ layout: 'default' })
-useHead({ title: 'About Us | CouponDealsUS' })
+
+const siteUrl = useRuntimeConfig().public.siteUrl
+const pageUrl = `${siteUrl}/about`
+
+useSeoMeta({
+  title: 'About Us | HotCouponGain',
+  description: 'HotCouponGain is a free coupon and deal discovery platform. Find verified coupon codes and exclusive deals from thousands of top brands.',
+  ogTitle: 'About Us | HotCouponGain',
+  ogDescription: 'Learn about HotCouponGain - your free coupon and deal discovery platform.',
+  ogUrl: pageUrl,
+  ogType: 'website',
+  twitterCard: 'summary',
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: pageUrl }]
+})
+
+// JSON-LD: AboutPage
+useHead({
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'AboutPage',
+      name: 'About HotCouponGain',
+      description: 'HotCouponGain is a free coupon and deal discovery platform helping consumers save money.',
+      url: pageUrl
+    })
+  }]
+})
 </script>

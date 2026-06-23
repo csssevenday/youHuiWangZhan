@@ -7,7 +7,9 @@ export function formatDiscount(amount: number, type: string): string {
 }
 
 export function formatDate(dateString: string): string {
+  if (!dateString || !dateString.trim()) return 'No expiry'
   const date = new Date(dateString)
+  if (isNaN(date.getTime())) return 'No expiry'
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',

@@ -9,11 +9,12 @@
         We partner with thousands of retailers through CJ Affiliate (Commission Junction) to bring you verified coupon codes
         and exclusive deals.
       </p>
-      <h2>How It Works</h2>
+      <!-- <h2>How It Works</h2>
       <p class="text-gray-600">
         When you click on a deal or use a coupon code from our site, we may earn a commission at no extra cost to you.
         This affiliate relationship allows us to maintain this platform for free while helping you discover savings.
-      </p>
+      </p> -->
+      <p> </p>
       <h2>Our Mission</h2>
       <p class="text-gray-600">
         We believe everyone deserves access to the best deals without spending hours searching. Our team verifies

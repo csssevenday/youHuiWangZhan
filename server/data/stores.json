@@ -1,15 +1,43 @@
 {
   "data": [
     {
-      "id": 4839834,
-      "name": "Modlily.com",
-      "slug": "modlily-com",
-      "description": "Modlily.com deals and coupons - Save money with verified discounts and promo codes.",
-      "logoUrl": "/logos/Modlily.png",
-      "websiteUrl": "https://www.modlily.com/",
+      "id": 7804601,
+      "name": "GearUP",
+      "slug": "gearup",
+      "description": "GearUP deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "/logos/GearUP.png",
+      "websiteUrl": "https://www.gearupbooster.com/",
       "categories": [
-        "Clothing/Apparel",
-        "Women's"
+        "Games & Toys",
+        "Electronic Games"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
+      "id": 7906138,
+      "name": "MOVA North America",
+      "slug": "mova-north-america",
+      "description": "MOVA North America deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "https://logo.clearbit.com/us.mova.tech",
+      "websiteUrl": "https://us.mova.tech",
+      "categories": [
+        "Home & Garden",
+        "Home Appliances"
+      ],
+      "rating": 4,
+      "dealCount": 20
+    },
+    {
+      "id": 6536042,
+      "name": "Chow Sang Sang",
+      "slug": "chow-sang-sang",
+      "description": "Chow Sang Sang deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "/logos/chow-sang-sang.png",
+      "websiteUrl": "https://www.chowsangsang.com/en/home",
+      "categories": [
+        "Accessories",
+        "Jewelry"
       ],
       "rating": 4,
       "dealCount": 0
@@ -29,20 +57,6 @@
       "dealCount": 26
     },
     {
-      "id": 6536042,
-      "name": "Chow Sang Sang",
-      "slug": "chow-sang-sang",
-      "description": "Chow Sang Sang deals and coupons - Save money with verified discounts and promo codes.",
-      "logoUrl": "/logos/chow-sang-sang.png",
-      "websiteUrl": "https://www.chowsangsang.com/en/home",
-      "categories": [
-        "Accessories",
-        "Jewelry"
-      ],
-      "rating": 4,
-      "dealCount": 49
-    },
-    {
       "id": 7636568,
       "name": "Coofandy",
       "slug": "coofandy",
@@ -57,46 +71,32 @@
       "dealCount": 1
     },
     {
-      "id": 7804601,
-      "name": "GearUP",
-      "slug": "gearup",
-      "description": "GearUP deals and coupons - Save money with verified discounts and promo codes.",
-      "logoUrl": "/logos/GearUP.png",
-      "websiteUrl": "https://www.gearupbooster.com/",
+      "id": 5357356,
+      "name": "Rexing",
+      "slug": "rexing",
+      "description": "Rexing deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "https://logo.clearbit.com/rexing.com",
+      "websiteUrl": "https://www.rexing.com/",
       "categories": [
-        "Games & Toys",
-        "Electronic Games"
+        "Automotive",
+        "Cars & Trucks"
       ],
       "rating": 4,
       "dealCount": 0
     },
     {
-      "id": 6404897,
-      "name": "Aiper",
-      "slug": "aiper",
-      "description": "Aiper deals and coupons - Save money with verified discounts and promo codes.",
-      "logoUrl": "/logos/aiper.png",
-      "websiteUrl": "https://aiper.com",
+      "id": 7839428,
+      "name": "Amotopart",
+      "slug": "amotopart",
+      "description": "Amotopart deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "https://logo.clearbit.com/amotopart.com",
+      "websiteUrl": "https://amotopart.com/",
       "categories": [
-        "Home & Garden",
-        "Garden"
+        "Automotive",
+        "Parts & Accessories"
       ],
       "rating": 4,
-      "dealCount": 12
-    },
-    {
-      "id": 7582444,
-      "name": "Bc Babycare",
-      "slug": "bc-babycare",
-      "description": "Bc Babycare deals and coupons - Save money with verified discounts and promo codes.",
-      "logoUrl": "/logos/bc-babycare.png",
-      "websiteUrl": "https://www.bcbabycare.com/",
-      "categories": [
-        "Family",
-        "Children"
-      ],
-      "rating": 4,
-      "dealCount": 13
+      "dealCount": 11
     },
     {
       "id": 7686542,
@@ -111,7 +111,63 @@
       ],
       "rating": 4,
       "dealCount": 1
+    },
+    {
+      "id": 6404897,
+      "name": "Aiper",
+      "slug": "aiper",
+      "description": "Aiper deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "/logos/aiper.png",
+      "websiteUrl": "https://aiper.com",
+      "categories": [
+        "Home & Garden",
+        "Garden"
+      ],
+      "rating": 4,
+      "dealCount": 11
+    },
+    {
+      "id": 7582444,
+      "name": "Bc Babycare",
+      "slug": "bc-babycare",
+      "description": "Bc Babycare deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "/logos/bc-babycare.png",
+      "websiteUrl": "https://www.bcbabycare.com/",
+      "categories": [
+        "Family",
+        "Children"
+      ],
+      "rating": 4,
+      "dealCount": 12
+    },
+    {
+      "id": 4839834,
+      "name": "Modlily.com",
+      "slug": "modlily-com",
+      "description": "Modlily.com deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "/logos/Modlily.png",
+      "websiteUrl": "https://www.modlily.com/",
+      "categories": [
+        "Clothing/Apparel",
+        "Women's"
+      ],
+      "rating": 4,
+      "dealCount": 0
+    },
+    {
+      "id": 5725175,
+      "name": "BraceAbility",
+      "slug": "braceability",
+      "description": "BraceAbility deals and coupons - Save money with verified discounts and promo codes.",
+      "logoUrl": "https://logo.clearbit.com/braceability.com",
+      "websiteUrl": "http://www.braceability.com",
+      "categories": [
+        "Health and Wellness",
+        "Equipment"
+      ],
+      "rating": 4,
+      "dealCount": 16
     }
   ],
-  "timestamp": 1782193078026
+  "timestamp": 1782271943679
 }

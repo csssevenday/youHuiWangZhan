@@ -15,13 +15,13 @@ export const CUSTOM_LOGOS: Record<string, string> = {
 
 export function getStoreLogo(advertiserId: string | number, websiteUrl: string): string {
   const id = String(advertiserId)
-  const filename = CUSTOM_LOGOS[id]
-  if (filename) {
-    return `/logos/${filename}`
-  }
+  // const filename = CUSTOM_LOGOS[id]
+  // if (filename) {
+  //   return `/logos/${filename}`
+  // }
   const domain = websiteUrl
     .replace(/^https?:\/\//, '')
     .replace(/^www\./, '')
     .replace(/\/$/, '')
-  return `https://logo.clearbit.com/${domain}`
+  return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`
 }

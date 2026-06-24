@@ -8,7 +8,7 @@
       @error="handleLogoError"
       ref="logoImg"
     />
-    <div v-if="logoError" class="w-[115px] h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center text-white text-lg font-bold mb-3 -mt-[52px]">
+    <div v-if="logoError" class="w-[115px] h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center text-white text-lg font-bold mb-3">
       {{ store.name.charAt(0) }}
     </div>
     <h3 class="text-lg font-semibold text-gray-900">{{ store.name }}</h3>

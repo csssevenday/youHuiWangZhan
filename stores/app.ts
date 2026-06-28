@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import type { Coupon, Deal, Store } from '~/types'
-
+// 1
 interface AppState {
   coupons: Coupon[]
   deals: Deal[]
